@@ -1,5 +1,5 @@
-ls
-ls -ltr
-uname
-uname -a
-ls -a
+a=app
+mkdir app
+cd app
+rm -rf app
+
