@@ -1,11 +1,9 @@
 - name: Install the Nginx Web Server
-  ansible.builtin.yum:
-    name: httpd
-    name: Nginx
-    state: latest
+  Hosts: WEB
+  become: true
+  Tasks:
+   - name: intall nginx
+      ansible.builtin.yum:
+        name: httpd
+        state: latest
 
-- name: Start nginx service
-    ansible.builtin.service:
-      name: httpd
-      name:nginx
-      state: started
