@@ -1,0 +1,11 @@
+- name: Install the Nginx Web Server
+  ansible.builtin.yum:
+    name: httpd
+    name: Nginx
+    state: latest
+
+- name: Start nginx service
+    ansible.builtin.service:
+      name: httpd
+      name:nginx
+      state: started
