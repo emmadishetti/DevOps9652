@@ -1,5 +1,5 @@
-- name: Install the Nginx Web Server
-  Host: WEB
+- name: INstall Nginx
+  Hosts: WEB
   become: true
   Tasks:
    - name: intall nginx
